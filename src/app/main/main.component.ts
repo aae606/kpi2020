@@ -11,8 +11,7 @@ export class MainComponent implements OnInit {
   dataPsy: any = [];
   dataPsy2: any = [];
   dataPsy3: any = [];
-  mdd: any = [];
-  dataMdd: any = [];
+
   constructor(private http: HttpClient) { }
 
 highcharts = Highcharts;
@@ -31,7 +30,7 @@ highcharts = Highcharts;
       yAxis : {
          min: 0,
          title: {
-            text: 'Rainfall (mm)'
+            text: 'จำนวน (ราย)'
          }
       },
       plotOptions : {
@@ -42,17 +41,17 @@ highcharts = Highcharts;
       },
       series: [{
          name: 'เขตสุขภาพ',
-        //  data: parseInt(this.dataPsy3);
-         data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6,
-            148.5, 216.4, 194.1, 95.6, 54.4]
+         data: this.dataPsy3
+        //  data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6,
+        //     148.5, 216.4, 194.1, 95.6, 54.4]
       }]
   };
 
   psyApi = 'https://sheet.best/api/sheets/b7a2ce1d-d82e-4475-b394-85e6c5dc90ab';
   async ngOnInit() {
     await this.getPsy();
-    alert( this.dataPsy2);
-    alert( this.dataPsy3);
+    // alert( this.dataPsy2);
+    // alert( this.dataPsy3);
   }
   async getPsy() {
     const req = await this.http.get(this.psyApi).toPromise();
@@ -61,10 +60,8 @@ highcharts = Highcharts;
       return data.ahb;
     });
     this.dataPsy3 = this.dataPsy.map( (data) => {
-      return data.percen;
+      return parseFloat( data.percen );
     });
-
-
     console.log(this.dataPsy2);
     console.log(this.dataPsy3);
   }
