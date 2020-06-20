@@ -22,10 +22,10 @@ highcharts = Highcharts;
    title: {
       text: 'Prasri Kpi 2020'
    },      xAxis: {
-         categories: this.dataPsy2,
+         categories: `${this.dataPsy2}`
         //  categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul',
         //  'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-         crosshair: true
+        //  crosshair: true
       },
       yAxis : {
          min: 0,
