@@ -49,7 +49,7 @@ highcharts = Highcharts;
 
   psyApi = 'https://sheet.best/api/sheets/b7a2ce1d-d82e-4475-b394-85e6c5dc90ab';
   async ngOnInit() {
-    await this.getPsy();
+    // await this.getPsy();
     // alert( this.dataPsy2);
     // alert( this.dataPsy3);
   }
