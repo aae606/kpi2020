@@ -7,7 +7,6 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ['./kpi-mdd-ahb.component.scss']
 })
 export class KpiMddAhbComponent implements OnInit {
-  // https://script.google.com/macros/s/AKfycbxkR34BtgQiEuyxYuq07CdfVfzVSEcWNscXDi-ohUu3-0z-Nms/exec
   psyApi = "https://script.google.com/macros/s/AKfycbxkR34BtgQiEuyxYuq07CdfVfzVSEcWNscXDi-ohUu3-0z-Nms/exec";
   dataPsy: any = [];
   dataPsy2: Array<string> = [];
@@ -69,7 +68,7 @@ export class KpiMddAhbComponent implements OnInit {
               style: {
                 fontStyle: "italic",
               },
-              text: "68%",
+              text: "75%",
               x: 1,
             },
           },
@@ -83,7 +82,7 @@ export class KpiMddAhbComponent implements OnInit {
       },
       series: [
         {
-          name: "เขตสุขภาพ",
+          name: "เขตสุขภาพที่ 10",
           type: "column",
           data: this.dataPsy3,
           // data:  [94.46, 83.72, 89.25, 114.19, 65.54, 69.85, 127.43, 114.76, 97.96, 124.41, 91.59, 89.1, 15.9]

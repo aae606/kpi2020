@@ -9,7 +9,7 @@ import { HttpClient } from "@angular/common/http";
 })
 export class KpiiAutismComponent implements OnInit {
 
-  psyApi = "https://sheet.best/api/sheets/b7a2ce1d-d82e-4475-b394-85e6c5dc90ab";
+  psyApi = "https://script.google.com/macros/s/AKfycbyOiox2dULl7UoURyswquKj2ytUTNJwut7RytVg5UWN_M2gbBY/exec";
   dataPsy: any = [];
   dataPsy2: Array<string> = [];
   dataPsy3: Array<number> = [];
