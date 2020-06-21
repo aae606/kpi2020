@@ -11,6 +11,10 @@ export class MainComponent implements OnInit {
   dataPsy: any = [];
   dataPsy2: Array<string> = [];
   dataPsy3: Array<number> = [];
+
+  // Spriner
+  showSpinner = true;
+  data: any;
   Highcharts: typeof Highcharts = Highcharts; // required
   chartOptions: Highcharts.Options = {
     series: [
@@ -31,6 +35,8 @@ export class MainComponent implements OnInit {
       const req = await this.http.get(this.psyApi).toPromise();
       this.dataPsy = req;
       this.dataPsy2 = this.dataPsy.map( (data) => {
+        this.data = data;
+        this.showSpinner = false;
         return data.ahb;
       });
       this.dataPsy3 = this.dataPsy.map( (data) => {
