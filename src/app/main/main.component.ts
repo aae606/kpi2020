@@ -38,6 +38,7 @@ export class MainComponent implements OnInit {
         this.data = data;
         this.showSpinner = false;
         return data.ahb;
+
       });
       this.dataPsy3 = this.dataPsy.map( (data) => {
         return parseFloat( data.percen );
