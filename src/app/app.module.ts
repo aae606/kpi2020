@@ -10,12 +10,32 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 
 import { MainComponent } from './main/main.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HeaderComponent } from './layouts/header/header.component';
+import { FooterComponent } from './layouts/footer/footer.component';
+import { KpiMddComponent } from './pages/kpiMoph/kpi-mdd/kpi-mdd.component';
+import { KpiSuicideComponent } from './pages/kpiMoph/kpi-suicide/kpi-suicide.component';
+import { KpiPsyComponent } from './pages/servicePlan/kpi-psy/kpi-psy.component';
+import { KpiADHDComponent } from './pages/servicePlan/kpi-adhd/kpi-adhd.component';
+import { KpiiAutismComponent } from './pages/servicePlan/kpii-autism/kpii-autism.component';
+import { KpiiAlcoholicComponent } from './pages/servicePlan/kpii-alcoholic/kpii-alcoholic.component';
+import { KpiFullremissionComponent } from './pages/servicePlan/kpi-fullremission/kpi-fullremission.component';
+import { GuaranteeComponent } from './pages/guarantee/guarantee.component';
 @NgModule({
   declarations: [
     AppComponent,
     HighchartsChartComponent,
     MainComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HeaderComponent,
+    FooterComponent,
+    KpiMddComponent,
+    KpiSuicideComponent,
+    KpiPsyComponent,
+    KpiADHDComponent,
+    KpiiAutismComponent,
+    KpiiAlcoholicComponent,
+    KpiFullremissionComponent,
+    GuaranteeComponent
   ],
   imports: [
     BrowserModule,
