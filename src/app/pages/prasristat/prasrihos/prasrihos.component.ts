@@ -11,6 +11,8 @@ export class PrasrihosComponent implements OnInit {
   selectTab(tabId: number) {
     this.staticTabs.tabs[tabId].active = true;
   }
+
+  
   constructor() { }
 
   ngOnInit() {

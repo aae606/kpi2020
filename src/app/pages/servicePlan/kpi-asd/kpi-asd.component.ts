@@ -3,12 +3,13 @@ import * as Highcharts from "highcharts";
 import { HttpClient } from "@angular/common/http";
 
 @Component({
-  selector: 'app-kpi-suicide',
-  templateUrl: './kpi-suicide.component.html',
-  styleUrls: ['./kpi-suicide.component.scss']
+  selector: 'app-kpi-asd',
+  templateUrl: './kpi-asd.component.html',
+  styleUrls: ['./kpi-asd.component.scss']
 })
-export class KpiSuicideComponent implements OnInit {
-  psyApi = "https://sheet.best/api/sheets/b7a2ce1d-d82e-4475-b394-85e6c5dc90ab";
+export class KpiAsdComponent implements OnInit {
+
+  psyApi = "https://script.google.com/macros/s/AKfycbwyvyGNOityAidTDHliNf-5nH6I9sc-0f2xhxuNKsdj39J4t4w/exec";
   dataPsy: any = [];
   dataPsy2: Array<string> = [];
   dataPsy3: Array<number> = [];
@@ -44,7 +45,7 @@ export class KpiSuicideComponent implements OnInit {
 
     this.chartOptions = {
       title: {
-        text: "Prasri Kpi 2020",
+        text: "ร้อยละของผู้ป่วยโรคออทิสติกเข้าถึงบริการ ปี งบประมาณ2563",
       },credits: {
         enabled: false
       },
@@ -63,13 +64,13 @@ export class KpiSuicideComponent implements OnInit {
             color: "red",
             dashStyle: "Dash",
             width: 1,
-            value: 68,
+            value: 48,
             label: {
               align: "right",
               style: {
                 fontStyle: "italic",
               },
-              text: "68%",
+              text: "48%",
               x: 1,
             },
           },

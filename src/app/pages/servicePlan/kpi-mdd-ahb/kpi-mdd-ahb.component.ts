@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import * as Highcharts from "highcharts";
 import { HttpClient } from "@angular/common/http";
-
 @Component({
-  selector: 'app-kpi-suicide',
-  templateUrl: './kpi-suicide.component.html',
-  styleUrls: ['./kpi-suicide.component.scss']
+  selector: 'app-kpi-mdd-ahb',
+  templateUrl: './kpi-mdd-ahb.component.html',
+  styleUrls: ['./kpi-mdd-ahb.component.scss']
 })
-export class KpiSuicideComponent implements OnInit {
-  psyApi = "https://sheet.best/api/sheets/b7a2ce1d-d82e-4475-b394-85e6c5dc90ab";
+export class KpiMddAhbComponent implements OnInit {
+  // https://script.google.com/macros/s/AKfycbxkR34BtgQiEuyxYuq07CdfVfzVSEcWNscXDi-ohUu3-0z-Nms/exec
+  psyApi = "https://script.google.com/macros/s/AKfycbxkR34BtgQiEuyxYuq07CdfVfzVSEcWNscXDi-ohUu3-0z-Nms/exec";
   dataPsy: any = [];
   dataPsy2: Array<string> = [];
   dataPsy3: Array<number> = [];
@@ -44,7 +44,7 @@ export class KpiSuicideComponent implements OnInit {
 
     this.chartOptions = {
       title: {
-        text: "Prasri Kpi 2020",
+        text: " ร้อยละของผู้ป่วยโรคซึมเศร้าเข้าถึงบริการ ปี งบประมาณ2563",
       },credits: {
         enabled: false
       },
@@ -63,7 +63,7 @@ export class KpiSuicideComponent implements OnInit {
             color: "red",
             dashStyle: "Dash",
             width: 1,
-            value: 68,
+            value: 75,
             label: {
               align: "right",
               style: {
@@ -91,4 +91,5 @@ export class KpiSuicideComponent implements OnInit {
       ],
     };
   }
+
 }

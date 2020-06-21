@@ -3,12 +3,13 @@ import * as Highcharts from "highcharts";
 import { HttpClient } from "@angular/common/http";
 
 @Component({
-  selector: 'app-kpi-suicide',
-  templateUrl: './kpi-suicide.component.html',
-  styleUrls: ['./kpi-suicide.component.scss']
+  selector: 'app-kpi-psy-ahb',
+  templateUrl: './kpi-psy-ahb.component.html',
+  styleUrls: ['./kpi-psy-ahb.component.scss']
 })
-export class KpiSuicideComponent implements OnInit {
-  psyApi = "https://sheet.best/api/sheets/b7a2ce1d-d82e-4475-b394-85e6c5dc90ab";
+export class KpiPsyAhbComponent implements OnInit {
+
+  psyApi = "https://script.google.com/macros/s/AKfycbx_NFYShN9KUkaencgEGNZL27vqAmHDHrOdtLw7OGnsCI8aqDjP/exec";
   dataPsy: any = [];
   dataPsy2: Array<string> = [];
   dataPsy3: Array<number> = [];
@@ -44,7 +45,7 @@ export class KpiSuicideComponent implements OnInit {
 
     this.chartOptions = {
       title: {
-        text: "Prasri Kpi 2020",
+        text: "ร้อยละของผู้ป่วยโรคจิตเภทเข้าถึงบริการ เขตสุขภาพที่ 10ปี งบประมาณ2563",
       },credits: {
         enabled: false
       },
@@ -63,13 +64,13 @@ export class KpiSuicideComponent implements OnInit {
             color: "red",
             dashStyle: "Dash",
             width: 1,
-            value: 68,
+            value: 75,
             label: {
               align: "right",
               style: {
                 fontStyle: "italic",
               },
-              text: "68%",
+              text: "75%",
               x: 1,
             },
           },
@@ -91,4 +92,5 @@ export class KpiSuicideComponent implements OnInit {
       ],
     };
   }
+
 }

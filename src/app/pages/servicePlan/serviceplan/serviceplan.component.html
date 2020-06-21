@@ -1,1 +1,39 @@
-<p>serviceplan works!</p>
+<div class="row pb-3 pt-3">
+    <div class="col-md-12">
+        <div class="card bg-light mb-3">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+                <!-- <h3 class="card-title">Title</h3>
+                <p class="card-text">Text</p> -->
+                <accordion [isAnimated]="true">
+                    <accordion-group heading="ร้อยละของผู้ป่วยโรคซึมเศร้า เข้าถึงบริการ">
+                        <app-kpi-mdd></app-kpi-mdd>
+                    </accordion-group>
+                    <accordion-group heading="ร้อยละของผู้ป่วยโรคจิตเภทเข้าถึงบริการ">
+                        <app-kpi-psy></app-kpi-psy>
+                    </accordion-group>
+                    <accordion-group heading="ร้อยละของผู้ป่วยโรคสมาธิสั้นเข้าถึงบริการ">
+                       <app-kpi-adhd></app-kpi-adhd>
+                    </accordion-group>
+                    <accordion-group heading="ร้อยละของผู้ป่วยโรคออทิสติกเข้าถึงบริการ">
+                        <app-kpi-asd></app-kpi-asd>
+                    </accordion-group>
+                    <accordion-group heading="ร้อยละของผู้ป่วยโรคติดสุราในพื้นที่เข้าถึงบริการ ตามมาตรฐานเพิ่มขึ้น">
+                        <app-kpii-alcoholic></app-kpii-alcoholic>
+                    </accordion-group>
+                    <!-- <accordion-group heading="ร้อยละของผู้ทำร้ายตนเองเข้าถึงบริการ 15 ปีขึ้นไป">
+                       
+                    </accordion-group> -->
+                    <accordion-group heading="อัตราการฆ่าตัวตายสำเร็จ">
+                       <app-kpi-suicide></app-kpi-suicide>
+                    </accordion-group>
+                    <accordion-group
+                        heading="ร้อยละของผู้ป่วยโรคซึมเศร้าได้รับการดูแลตามแนวทางมาตรฐานจากหน่วยบริการต่อเนื่องเป็นเวลา 6 เดือน ">
+                        
+                    </accordion-group>
+                </accordion>
+            </div>
+        </div>
+    </div>
+
+</div>

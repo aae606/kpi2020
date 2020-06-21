@@ -28,7 +28,14 @@ import { KpiMophComponent } from './pages/kpiMoph/kpi-moph/kpi-moph.component';
 import { KpimophComponent } from './pages/kpiMoph/kpimoph/kpimoph.component';
 import { ServiceplanComponent } from './pages/servicePlan/serviceplan/serviceplan.component';
 import { PrasrihosComponent } from './pages/prasristat/prasrihos/prasrihos.component';
-
+import { ToptentableComponent } from './pages/prasristat/toptentable/toptentable.component';
+import { ToptenpieComponent } from './pages/prasristat/toptenpie/toptenpie.component';
+import { ChartsModule } from 'ng2-charts';
+import { MddGroupComponent } from './pages/prasristat/mdd-group/mdd-group.component';
+import { DrugGroupComponent } from './pages/prasristat/drug-group/drug-group.component';
+import { KpiMddAhbComponent } from './pages/serviceplan/kpi-mdd-ahb/kpi-mdd-ahb.component';
+import { KpiAsdComponent } from './pages/serviceplan/kpi-asd/kpi-asd.component';
+import { KpiPsyAhbComponent } from './pages/serviceplan/kpi-psy-ahb/kpi-psy-ahb.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +56,14 @@ import { PrasrihosComponent } from './pages/prasristat/prasrihos/prasrihos.compo
     KpiMophComponent,
     KpimophComponent,
     ServiceplanComponent,
-    PrasrihosComponent
+    PrasrihosComponent,
+    ToptentableComponent,
+    ToptenpieComponent,
+    MddGroupComponent,
+    DrugGroupComponent,
+    KpiMddAhbComponent,
+    KpiAsdComponent,
+    KpiPsyAhbComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +79,8 @@ import { PrasrihosComponent } from './pages/prasristat/prasrihos/prasrihos.compo
     }),
     TabsModule.forRoot(),
     AccordionModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ChartsModule
 
   ],
   providers: [],

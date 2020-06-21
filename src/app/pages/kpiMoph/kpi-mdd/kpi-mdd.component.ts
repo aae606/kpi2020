@@ -7,7 +7,7 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ['./kpi-mdd.component.scss']
 })
 export class KpiMddComponent implements OnInit {
-  psyApi = "https://sheet.best/api/sheets/b7a2ce1d-d82e-4475-b394-85e6c5dc90ab";
+  psyApi = "https://script.google.com/macros/s/AKfycby-g4US8UnJu0_xLlgQXjjsnUuuyGLB_UtmdrFlvizhkDfERCb-/exec";
   dataPsy: any = [];
   dataPsy2: Array<string> = [];
   dataPsy3: Array<number> = [];
@@ -38,12 +38,12 @@ export class KpiMddComponent implements OnInit {
     this.dataPsy3 = this.dataPsy.map((data) => {
       return parseFloat(data.percen);
     });
-    console.log(this.dataPsy2);
-    console.log(this.dataPsy3);
+    // console.log(this.dataPsy2);
+    // console.log(this.dataPsy3);
 
     this.chartOptions = {
       title: {
-        text: "Prasri Kpi 2020",
+        text: " ร้อยละของผู้ป่วยโรคซึมเศร้าเข้าถึงบริการ ปี งบประมาณ2563",
       },credits: {
         enabled: false
       },

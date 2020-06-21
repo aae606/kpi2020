@@ -25,68 +25,58 @@
                     _ngcontent-kul-c114="" class="count-name">ตัวชี้วัดตามคำรับรอง </span></div>
         </div>
     </div>
-    <h5>
-        สถานการภายในประเทศ
-        <small _ngcontent-kul-c114=""><code _ngcontent-kul-c114="">(https://covid19api.com/)</code></small>
+    <h5>จำนวนผู้ป่วยนอกทั้งหมด 10 อันดับโรคแรก (ปีงบประมาณ 2563)
+        <small _ngcontent-kul-c114=""><code
+                _ngcontent-kul-c114="">(ที่มา: ฐานข้อมูลเวชสถิติ ฝ่ายเวชระเบียน)</code></small>
     </h5>
     <div class="row pb-3 pt-3">
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
                     <h3 _ngcontent-kul-c114="" class="card-title"><i _ngcontent-kul-c114=""
-                            class="fas fa-map-marker-alt mr-1"></i> แผนที่แสดงจำนวน </h3>
-                    <table class="table table-striped table-inverse table-responsive">
-                        <thead class="thead-inverse">
-                            <tr>
-                                <th>xxxx</th>
-                                <th>xxxx</th>
-                                <th>xxxx</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td scope="row">xxxxx</td>
-                                <td>xxxxx</td>
-                                <td>xxxxx</td>
-                            </tr>
-                            <tr>
-                                <td scope="row">xxxx</td>
-                                <td>xxxx</td>
-                                <td>xxxx</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            class="fas fa-map-marker-alt mr-1"></i> แยกตามกลุ่มโรค </h3>
+                    <app-toptentable></app-toptentable>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
-                    <h3 class="card-title">Title</h3>
-                    <p class="card-text">Text</p>
+                    <h3 class="card-title">แยกตามเพศ</h3>
+                    <!-- <p class="card-text">Text</p> -->
+                    <app-toptenpie></app-toptenpie>
+
                 </div>
+                <ul class="list-group list-group-flush end">
+                    <li class="list-group-item">ชาย 1,450 ราย</li>
+                    <li class="list-group-item">หญิง 1,350</li>
+                    <li class="list-group-item">ไม่ทราบ - </li>
+                </ul>
             </div>
         </div>
     </div>
-
     <h5>
-        สถานการทั่วโลก
-        <small _ngcontent-kul-c114=""><code _ngcontent-kul-c114="">(https://covid19api.com/)</code></small>
+        แยกตามกลุ่มโรค
+        <small _ngcontent-kul-c114=""><code
+                _ngcontent-kul-c114="">(ที่มา: ฐานข้อมูลเวชสถิติ ฝ่ายเวชระเบียน)</code></small>
     </h5>
     <div class="row pb-3 pt-3">
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
-                    <h3 class="card-title">Title</h3>
-                    <p class="card-text">Text</p>
+                    <h3 class="card-title">กลุ่มโรคสุราและสารเสพติด</h3>
+                    <p class="card-text"></p>
+                    <app-mdd-group></app-mdd-group>
+
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
-                    <h3 class="card-title">Title</h3>
-                    <p class="card-text">Text</p>
+                    <h3 class="card-title">กลุ่มโรคซึมเศร้า</h3>
+                    <p class="card-text"></p>
+                    <app-drug-group></app-drug-group>
                 </div>
             </div>
         </div>
