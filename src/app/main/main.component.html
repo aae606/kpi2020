@@ -1,9 +1,13 @@
-<div class="container">
-    <div class="row">
-    <div class="col-md-s12">
-        <app-kpi-mdd></app-kpi-mdd>
-    </div>
-    </div>
+<tabset [justified]="true">
+    <tab heading="การใช้บริการสาธารณสุข">
+        <app-prasrihos></app-prasrihos>
+    </tab>
+    <tab heading="ตัวชี้วัดกระทรวง">
 
-
-</div>
+    </tab>
+    <tab heading="ตัวชี้วัดตรวจราชการ">Short Labeled Justified content</tab>
+    <tab heading="ตัวชี้วัดตามคำรับรอง">Long Labeled Justified content</tab>
+    <tab heading="ตัวชี้วัดตามยุทธศาสตร์">
+        <app-strategy></app-strategy>
+    </tab>
+</tabset>

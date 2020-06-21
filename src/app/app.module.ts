@@ -20,6 +20,15 @@ import { KpiiAutismComponent } from './pages/servicePlan/kpii-autism/kpii-autism
 import { KpiiAlcoholicComponent } from './pages/servicePlan/kpii-alcoholic/kpii-alcoholic.component';
 import { KpiFullremissionComponent } from './pages/servicePlan/kpi-fullremission/kpi-fullremission.component';
 import { GuaranteeComponent } from './pages/guarantee/guarantee.component';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import { StrategyComponent } from './pages/kpiStrategic/strategy/strategy.component';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { KpiMophComponent } from './pages/kpiMoph/kpi-moph/kpi-moph.component';
+import { KpimophComponent } from './pages/kpiMoph/kpimoph/kpimoph.component';
+import { ServiceplanComponent } from './pages/servicePlan/serviceplan/serviceplan.component';
+import { PrasrihosComponent } from './pages/prasristat/prasrihos/prasrihos.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +44,12 @@ import { GuaranteeComponent } from './pages/guarantee/guarantee.component';
     KpiiAutismComponent,
     KpiiAlcoholicComponent,
     KpiFullremissionComponent,
-    GuaranteeComponent
+    GuaranteeComponent,
+    StrategyComponent,
+    KpiMophComponent,
+    KpimophComponent,
+    ServiceplanComponent,
+    PrasrihosComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +62,10 @@ import { GuaranteeComponent } from './pages/guarantee/guarantee.component';
       outerStrokeColor: '#78C000',
       innerStrokeColor: '#C7E596',
       animationDuration: 300,
-    })
+    }),
+    TabsModule.forRoot(),
+    AccordionModule.forRoot(),
+    BrowserAnimationsModule
 
   ],
   providers: [],

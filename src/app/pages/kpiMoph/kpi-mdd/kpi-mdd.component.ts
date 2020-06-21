@@ -44,6 +44,8 @@ export class KpiMddComponent implements OnInit {
     this.chartOptions = {
       title: {
         text: "Prasri Kpi 2020",
+      },credits: {
+        enabled: false
       },
       xAxis: {
         categories: this.dataPsy2,
@@ -57,7 +59,7 @@ export class KpiMddComponent implements OnInit {
         maxPadding: 0.2,
         plotLines: [
           {
-            color: "#00ff00",
+            color: "red",
             dashStyle: "Dash",
             width: 1,
             value: 68,
